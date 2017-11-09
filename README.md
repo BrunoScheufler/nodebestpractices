@@ -662,6 +662,16 @@ All statements above will return false if used with `===`
 
 **Otherwise:** Using default equality comparison operators you might expose critical information based on the time taken to compare two objects
 
+<br/><br/>
+
+## ![✔] 6.2. Secure your application against directory traversal attacks
+
+**TL;DR:** When serving static files or working with user-submitted data and the file system using a Node.js web application, be careful to secure your application to disallow access to files and directories outside of your application boundaries.
+
+**Otherwise:** An attacker might be able to access files and directories located outside of the web application root folder.
+
+🔗 [**Read More: Securing your web application against directory traversal attacks**](/sections/security/directorytraversal.md)
+
 <br/><br/><br/>
 
 <p align="right"><a href="#table-of-contents">⬆ Return to top</a></p>
